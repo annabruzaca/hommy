@@ -9,10 +9,10 @@
 
 <ion-content>
         <ion-card-header class="título-home">
-            <ion-card-title>Bem-Vindx ao {{ title }}</ion-card-title>
+            <ion-card-title>Bem-Vindx ao Hommy</ion-card-title>
             <ion-card-subtitle>Começe a jornada para encontrar um novo lar!</ion-card-subtitle>
         </ion-card-header>
-        <ion-card *ngFor="let quarto of quartos">
+        <ion-card *ngFor="let quarto of quartos" routerLink="/quarto">
             <img [src]="quarto.imagem" alt="imagens referentes a república" class="casa-foto">
             <ion-card-header><h1>{{quarto.nameRepublica}}</h1></ion-card-header>
             <ion-card-subtitle>R${{quarto.priceQuarto}}</ion-card-subtitle>
