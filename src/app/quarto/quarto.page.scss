@@ -1,18 +1,34 @@
-icon-card-header.md icon-card-title{
-    color: #FF951A;
-    font-size: 1.5em;
-}
-
-icon-card-title{
-    font-size: 2em;
-}
-ion-card-subtitle{
-    margin-left: 10%;
-    font-size: 1.3em;
-    align-items: center;
-}
 .título-home{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.casa-foto{
+    height: 40vh;
+    width: 100%;
+}
+.titulo-preco-coracao{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+.links-centro{
+    align-items: center;
+    justify-content: center;
+    margin: 5%
+}
+.comodidades-tipos{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 5%;
+}
+ion-row{
+    margin: 4%;
+}
+.col-2{
+    margin-right: 5%;
+}
+ion-fab{
+    margin: 3%;
 }

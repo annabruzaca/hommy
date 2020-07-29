@@ -22,6 +22,10 @@ const routes: Routes = [
   {
     path: 'quarto',
     loadChildren: () => import('./quarto/quarto.module').then( m => m.QuartoPageModule)
+  },
+  {
+    path: 'cadastro',
+    loadChildren: () => import('./cadastro/cadastro.module').then( m => m.CadastroPageModule)
   }
 ];
 
