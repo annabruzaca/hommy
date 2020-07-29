@@ -9,23 +9,13 @@
 
 <ion-content>
         <ion-card-header class="título-home">
-            <ion-card-title>Bem-Vindx ao {{ title }}</ion-card-title>
+            <ion-card-title>Bem-Vindx ao Hommy</ion-card-title>
             <ion-card-subtitle>Começe a jornada para encontrar um novo lar!</ion-card-subtitle>
         </ion-card-header>
-        <ion-card class="card-images">
-            <img src="assets/casa.jpg"class="casa-foto"/>
-            <ion-card-header>
-              <ion-card-title>Casa Kaller</ion-card-title>
-            </ion-card-header>
-            <ion-card-subtitle>R$700</ion-card-subtitle>
-            <ion-card-content>Rua Buena Vista, Ipanema, Rio de Janeiro</ion-card-content>
-          </ion-card>
-          <ion-card class="card-images">
-              <img src="assets/cozinha.jpg" />
-              <ion-card-header>
-                <ion-card-title>Casa Kiwer</ion-card-title>
-              </ion-card-header>
-              <ion-card-subtitle>R$900</ion-card-subtitle>
-              <ion-card-content>Rua Mota Sastes, Ilha do Fundão, Rio de Janeiro</ion-card-content>
-            </ion-card>
+        <ion-card *ngFor="let quarto of quartos" routerLink="/quarto">
+            <img [src]="quarto.imagem" alt="imagens referentes a república" class="casa-foto">
+            <ion-card-header><h1>{{quarto.nameRepublica}}</h1></ion-card-header>
+            <ion-card-subtitle>R${{quarto.priceQuarto}}</ion-card-subtitle>
+            <ion-card-content>{{quarto.addressRepublica}}</ion-card-content>
+        </ion-card>
 </ion-content>
