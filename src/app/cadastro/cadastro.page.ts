@@ -20,7 +20,7 @@ cadastroForm: FormGroup;
   submitForm(form) {
       console.log(form);
       console.log(form.value);
-      window.location.href="/cadastro_rep";
+      window.location.href="/home";
   }
 
   ngOnInit() {

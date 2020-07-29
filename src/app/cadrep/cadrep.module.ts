@@ -4,18 +4,18 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { CadastroRepPageRoutingModule } from './cadastro-rep-routing.module';
+import { CadrepPageRoutingModule } from './cadrep-routing.module';
 
-import { CadastroRepPage } from './cadastro-rep.page';
+import { CadrepPage } from './cadrep.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    CadastroRepPageRoutingModule,
+    CadrepPageRoutingModule,
     ReactiveFormsModule
   ],
-  declarations: [CadastroRepPage]
+  declarations: [CadrepPage]
 })
-export class CadastroRepPageModule {}
+export class CadrepPageModule {}

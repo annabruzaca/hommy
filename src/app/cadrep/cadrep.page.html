@@ -1,0 +1,49 @@
+<ion-header>
+    <ion-toolbar color="secondary">
+        <ion-buttons slot="start">
+            <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+      <ion-title>Cadastro</ion-title>
+      </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <form [formGroup]="cadrepForm" (ngSubmit)="submitForm(cadrepForm)">
+    <ion-list>
+        <ion-item>
+            <ion-label position="floating">Quantidade de quartos:</ion-label>
+            <ion-input type="number" formControlName="quartos"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label position="floating">Quantidade de banheiros:</ion-label>
+            <ion-input type="number" formControlName="banheiros"></ion-input>
+        </ion-item>
+    </ion-list>
+    <ion-checkbox-group>
+        <ion-list-header>
+            <ion-label>Comodidades:</ion-label>
+        </ion-list-header>
+        <ion-item>
+            <ion-label>Cozinha</ion-label>
+            <ion-checkbox slot="start" valeu="comodidade1" checked></ion-checkbox>
+        </ion-item>
+        <ion-item>
+            <ion-label>Sala Comunitária</ion-label>
+            <ion-checkbox slot="start" valeu="comodidade2" checked></ion-checkbox>
+        </ion-item>
+        <ion-item>
+            <ion-label>Lavanderia</ion-label>
+            <ion-checkbox slot="start" valeu="comodidade3" checked></ion-checkbox>
+        </ion-item>
+        <ion-item>
+            <ion-label>Mobilhado</ion-label>
+            <ion-checkbox slot="start" valeu="comodidade4" checked></ion-checkbox>
+        </ion-item>
+    </ion-checkbox-group>
+    <ion-item>
+        <ion-label position="floating">Descrição</ion-label>
+        <ion-input type="text" formControlName="descricao"></ion-input>
+    </ion-item>
+    <ion-button type="submit" color="primary" shape="round" [disabled]="cadrepForm.invalid">Cadastrar</ion-button>
+    </form>
+</ion-content>

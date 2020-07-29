@@ -38,6 +38,14 @@ const routes: Routes = [
   {
     path: 'login',
     loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
+  },
+  {
+    path: 'cad-rep-sn',
+    loadChildren: () => import('./cad-rep-sn/cad-rep-sn.module').then( m => m.CadRepSnPageModule)
+  },
+  {
+    path: 'cadrep',
+    loadChildren: () => import('./cadrep/cadrep.module').then( m => m.CadrepPageModule)
   }
 ];
 
