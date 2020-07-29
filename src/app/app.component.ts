@@ -18,12 +18,22 @@ export class AppComponent implements OnInit {
       icon: 'home'
     },
     {
+       title: 'Conta',
+       url: '/conta',
+       icon: 'person'
+    },
+    {
       title: 'Favoritos',
       url: '/favoritos',
       icon: 'heart'
     },
     {
       title: 'Mensagens',
+      url: '/folder/Mensagens',
+      icon: 'chatbox-ellipses'
+    },
+    {
+      title: 'Conta',
       url: '/folder/Mensagens',
       icon: 'chatbox-ellipses'
     },
