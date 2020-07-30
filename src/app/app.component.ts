@@ -37,11 +37,6 @@ export class AppComponent implements OnInit {
       url: '/folder/Mensagens',
       icon: 'chatbox-ellipses'
     },
-    {
-      title: 'Conta',
-      url: '/folder/Mensagens',
-      icon: 'chatbox-ellipses'
-    },
   ];
 
   constructor(

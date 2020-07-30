@@ -1,19 +1,19 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { IonicModule } from '@ionic/angular';
 
-import { CadastroRepPage } from './cadastro-rep.page';
+import { CustomCardComponent } from './custom-card.component';
 
-describe('CadastroRepPage', () => {
-  let component: CadastroRepPage;
-  let fixture: ComponentFixture<CadastroRepPage>;
+describe('CustomCardComponent', () => {
+  let component: CustomCardComponent;
+  let fixture: ComponentFixture<CustomCardComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ CadastroRepPage ],
+      declarations: [ CustomCardComponent ],
       imports: [IonicModule.forRoot()]
     }).compileComponents();
 
-    fixture = TestBed.createComponent(CadastroRepPage);
+    fixture = TestBed.createComponent(CustomCardComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   }));

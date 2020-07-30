@@ -32,16 +32,8 @@ const routes: Routes = [
     loadChildren: () => import('./conta/conta.module').then( m => m.ContaPageModule)
   },
   {
-    path: 'cadastro-rep',
-    loadChildren: () => import('./cadastro-rep/cadastro-rep.module').then( m => m.CadastroRepPageModule)
-  },
-  {
     path: 'login',
     loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
-  },
-  {
-    path: 'cad-rep-sn',
-    loadChildren: () => import('./cad-rep-sn/cad-rep-sn.module').then( m => m.CadRepSnPageModule)
   },
   {
     path: 'cadrep',

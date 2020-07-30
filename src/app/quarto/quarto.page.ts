@@ -32,8 +32,8 @@ export class QuartoPage implements OnInit {
   }
   async alerta() {
       const alert = await this.alertController.create({
-          header: 'Deseja reservar quarto?',
-          message: 'Tem certeza que deseja reservar?',
+          header: 'Tem certeza que deseja reservar?',
+          message: 'O locador será avisado da sua reserva e os dados serão acertados com ele.',
           buttons: ['Reservar','Cancelar']
       });
       await alert.present();
