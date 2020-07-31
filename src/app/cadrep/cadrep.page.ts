@@ -10,6 +10,7 @@ export class CadrepPage implements OnInit {
 cadrepForm: FormGroup;
 
   constructor(public formBuilder: FormBuilder) {
+
   this.cadrepForm = this.formBuilder.group({
       quartos: [null, [Validators.required]],
       banheiros: [null, [Validators.required]],
@@ -23,5 +24,4 @@ cadrepForm: FormGroup;
   }
   ngOnInit() {
   }
-
 }

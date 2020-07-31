@@ -3,32 +3,18 @@
     flex-direction: column;
     align-items: center;
 }
-.casa-foto{
-    height: 40vh;
-    width: 100%;
-}
 .titulo-preco-coracao{
     display: flex;
-    flex-direction: row;
-    align-items: flex-end;
+    justify-content: center;
+    align-items: center;
+    margin: 2%;
+}
+img{
+    widht: 100%;
+    height: 40vh;
 }
 .links-centro{
+    justify-content: center;
     align-items: center;
-    justify-content: center;
-    margin: 5%
-}
-.comodidades-tipos{
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    margin: 5%;
-}
-ion-row{
-    margin: 4%;
-}
-.col-2{
-    margin-right: 5%;
-}
-ion-fab{
-    margin: 3%;
+    margin: 2%;
 }

@@ -1,18 +1,16 @@
-<ion-card>
+<ion-card (click)='gogo()'>
     <ion-grid>
+        <img src="{{quarto.imagem}}" alt="">
         <ion-row class="row-p">
             <ion-col size=8>
-                <ion-card-title>{{title}}</ion-card-title>
+                <h1>{{quarto.nameRepublica}}</h1>
             </ion-col>
             <ion-col>
-                <ion-card-subtitle class="mrs">R${{subtitle}}</ion-card-subtitle>
+                <h4 class="mrs">R${{quarto.priceQuarto}}</h4>
             </ion-col>
-    </ion-row>
-    <ion-row>
-        <ion-card-content>{{content}}</ion-card-content>
-    </ion-row>
-    <ion-row class="ccb">
-    <ion-button (click)="handleButton()">ver mais</ion-button>
-    </ion-row>
-    </ion-grid>
+       </ion-row>
+       <ion-row>
+           <ion-card-content>{{quarto.addressRepublica}}</ion-card-content>
+       </ion-row>
+       </ion-grid>
 </ion-card>

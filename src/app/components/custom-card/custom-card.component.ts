@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-custom-card',
@@ -7,11 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CustomCardComponent implements OnInit {
 
-    title: string = 'Casa Kaller';
-    subtitle: number = 700;
-    content: string = 'Rua Maria Joana, Tijuca, Rio de Janeiro';
+    @Input() quarto;
+
+    @Output() buttonPressed = new EventEmitter<string>();
 
   constructor() { }
 
   ngOnInit() {}
+
+  gogo() {
+      console.log('Evento emitido');
+      this.buttonPressed.emit("KABOMM");
+      alert(event);
+  }
 }
